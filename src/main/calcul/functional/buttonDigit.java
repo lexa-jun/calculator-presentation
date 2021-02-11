@@ -10,6 +10,7 @@ public  class buttonDigit {
 
     private float b = 0f;
 
+
     private String operator = "+";
 
     public buttonDigit(functional func) {
