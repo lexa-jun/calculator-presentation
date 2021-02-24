@@ -19,7 +19,6 @@ interface functional {
 
     void buttonEnterClick(ActionEvent actionEvent);
 
-
     void setDigit(String valueOf);
 }
 

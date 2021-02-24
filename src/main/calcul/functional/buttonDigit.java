@@ -10,7 +10,6 @@ public  class buttonDigit {
 
     private float b = 0f;
 
-
     private String operator = "+";
 
     public buttonDigit(functional func) {
@@ -49,7 +48,7 @@ public  class buttonDigit {
     }
 
     void clean() {
-        lastButtonWasDigit= false;
+        lastButtonWasDigit = false;
         operator = "+";
         a = 0f;
         b = 0f;
@@ -67,26 +66,18 @@ public  class buttonDigit {
             b = getParse();
         }
           calc();
-        System.out.println("" + b);
     }
 
     private void calc() {
 
-        if ("+".equals(this.operator)) {
-            setDigits(a + b);
-        } else if ("-".equals(this.operator)) {
-            setDigits(a - b);
-        } else if ("*".equals(this.operator)) {
-            setDigits(a * b);
-        } else if ("/".equals(this.operator)) {
-            setDigits(a / b);
-        } else {
-            throw new IllegalStateException("Unexpected value:" + this.operator);
+        switch (this.operator) {
+            case "+" -> setDigits(a + b);
+            case "-" -> setDigits(a - b);
+            case "*" -> setDigits(a * b);
+            case "/" -> setDigits(a / b);
+            default -> throw new IllegalStateException("Unexpected value:" + this.operator);
         }
-
         a = getParse();
         lastButtonWasDigit = false;
-        System.out.print("" + a + b );
-
     }
 }
