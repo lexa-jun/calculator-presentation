@@ -1,10 +1,10 @@
 package calcul.functional;
 
-public  class buttonDigit {
+public  class Display {
 
     private boolean lastButtonWasDigit;
 
-    private final functional func;
+    private final Functional func;
 
     private float a = 0f;
 
@@ -12,7 +12,7 @@ public  class buttonDigit {
 
     private String operator = "+";
 
-    public buttonDigit(functional func) {
+    public Display(Functional func) {
         this.func = func;
     }
 

@@ -6,14 +6,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 
-public class Controller implements functional {
+public class Controller implements Functional {
 
     public TextField display;
 
-    public buttonDigit btn;
+    public Display btn;
 
     public Controller() {
-        btn = new buttonDigit(this);
+        btn = new Display(this);
     }
 
     public void setDigit(String s) {

@@ -3,7 +3,7 @@ package calcul.functional;
 
 import javafx.event.ActionEvent;
 
-interface functional {
+interface Functional {
 
     void buttonDigitClick(ActionEvent actionEvent);
 
