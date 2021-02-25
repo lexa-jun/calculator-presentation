@@ -57,5 +57,4 @@ public class Controller implements Functional {
     public void buttonEnterClick(ActionEvent actionEvent) {
         btn.enter();
     }
-
 }
