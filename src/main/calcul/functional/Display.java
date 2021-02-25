@@ -79,5 +79,6 @@ public  class Display {
         }
         a = getParse();
         lastButtonWasDigit = false;
+
     }
 }
